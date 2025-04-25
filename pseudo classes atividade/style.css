@@ -1,0 +1,40 @@
+/* 1. Estilização dos links */
+
+/* Links padrão */
+a {
+    color: var(--cor-destaque); /* Exemplo: #007BFF */
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Links ao passar o mouse */
+  a:hover {
+    color: var(--cor-destaque-hover); /* Exemplo: #0056b3 (tom mais escuro) */
+  }
+  
+  /* Links visitados */
+  a:visited {
+    color: var(--cor-destaque-visitado); /* Exemplo: #6c757d */
+    font-weight: normal;
+  }
+  
+  
+  /* 2. Destaque da primeira letra do primeiro parágrafo da seção principal */
+  main p:first-of-type::first-letter {
+    font-size: 3em;
+    font-family: 'Georgia', serif; /* Fonte diferente da padrão */
+    float: left;
+    line-height: 1;
+    padding-right: 5px;
+  }
+  
+  
+  /* 3. Bordas nos itens do menu de design */
+  .menu-design li {
+    border-top: 1px solid #ccc; /* Borda superior em todos os itens */
+  }
+  
+  .menu-design li:last-child {
+    border-bottom: 1px solid #ccc; /* Borda inferior apenas no último item */
+  }
+  
